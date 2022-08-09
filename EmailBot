@@ -27,7 +27,7 @@ def get_info():
 def send_email(receiver, subject, message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('20bce005@nirmauni.ac.in', 'AP19@ng')
+    server.login('//your email//', '//your email password//')
     email = EmailMessage()
     email['From'] = 'Sender_Email'
     email['To'] = receiver
